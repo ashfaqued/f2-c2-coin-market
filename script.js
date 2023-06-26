@@ -32,10 +32,11 @@ function renderTable(data) {
       <td>${item.symbol}</td>
       <td>${item.id}</td>
       <td>${"$" + item.current_price}</td>
+      <td>${"$" + item.total_volume}</td>
       <td class="${percentageChangeClass}">${
       item.price_change_percentage_24h
     }</td>
-    <td>${"Mkt Cap : $"+item.total_volume}</td>
+    <td>${"Mkt Cap : $"+item.market_cap}</td>
         `;
     tableBody.appendChild(row);
   });
